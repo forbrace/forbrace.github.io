@@ -1,6 +1,9 @@
 frontend-nanodegree-arcade-game
 ===============================
 This is a classic arcade game Frogger clone written in Javascript.
+
+<a href="http://forbrace.github.io/arcade-game/">Run Demo</a>
+
 Installation
 ------------------------------------------------------------
 1. Clone ULR
