@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 13px/1.375 sans-serif;
+  }
+  svg {
+    display: block;
+    margin: 0;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  .menu {
+    position: relative;
+    overflow:hidden;
+  }
+  .menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .menu-list li {
+    margin: 0;
+    padding: 0;
+  }
+  .menu-list a {
+    padding: 0;
+    color: #fff;
+    display: table;
+    width: 100%;
+  }
+  .menu-item-link span {
+    display: table-cell;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding: 10px 20px 10px 30px;
+    vertical-align: middle;
+  }
+  .menu-list li:first-child span {
+    border: 0;
+  }
+  .menu-list a:hover {
+    background: #f36c60;
+  }
+  .clip-holder {
+    position:relative;
+    float:right;
+    z-index: 5;
+    width: 220px;
+  }
+  .clip {
+    -webkit-clip-path: polygon(10px 25px, 0px 200px, 220px 200px, 220px 0px, 0px 0px);
+    clip-path: url("#clipPolygon");
+    background: #aed581;
+    width: 220px;
+  }
+  .menu-content-items {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .menu-content-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color:#000;
+    background-image:url(http://pixdaus.com/files/items/pics/6/71/14671_e9e0b5f37be30fd003e79e0cd7d75b4c_large.jpg);
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow: hidden;
+  }
+  .menu-content-item-table {
+    display: table;
+    width: 100%;
+  }
+  .menu-content-item-cell {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .is-active-item {
+    opacity: 1;
+    z-index: 3;
+  }
+  /*Demo*/
+  .menu-content-item:nth-child(1) {
+    background-image: url(http://pixdaus.com/files/items/pics/0/5/14005_92cb31e3f661fd346f2fbaae0b39e76a_large.jpg);
+    z-index: 2;
+    opacity: 1;
+  }
+  .menu-content-item:nth-child(2) {
+    background-image: url(http://pixdaus.com/files/items/pics/9/13/13913_028f6076f0b4003b55cc1e152c7c1734_large.jpg);
+  }
+  .menu-content-item:nth-child(3) {
+    background-image: url(http://pixdaus.com/files/items/pics/0/6/14006_ae4e7b0304a5d10a9c20abac0e092379_large.jpg);
+  }
+  .menu-content-item:nth-child(4) {
+    background-image: url(http://pixdaus.com/files/items/pics/6/2/13602_4f3e4b8b4811cc367df6e95482af533d_large.jpg);
+  }
+  /*/*/
+  .menu-content-item-caption {
+    display: inline-block;
+    padding: 10px 240px 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    max-width: 30%;
+  }
