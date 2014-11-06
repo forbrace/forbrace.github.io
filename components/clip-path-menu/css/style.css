@@ -38,6 +38,7 @@ body {
   .menu-list li:first-child span {
     border: 0;
   }
+  .menu-list .is-active,
   .menu-list a:hover {
     background: #f36c60;
   }
