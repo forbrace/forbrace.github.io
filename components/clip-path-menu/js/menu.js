@@ -27,7 +27,7 @@ var Menu = function(options) {
       }(i))
     };
 
-    elem.style.height = height + 'px';
+    // elem.style.height = height + 'px';
     menu.addEventListener('mouseover', onMenuMouseover);
     renderPolygon(height);
 
