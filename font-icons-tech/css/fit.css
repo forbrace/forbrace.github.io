@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "fit";
+  src:url("./fonts/fit/fit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fit {
+  display: inline-block;
+  font: normal normal normal 14px/1 "fit";
+  font-size: inherit;
+  speak: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+
+/* makes the font 33% larger relative to the icon container */
+.fit-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fit-2x {
+  font-size: 2em;
+}
+.fit-3x {
+  font-size: 3em;
+}
+.fit-4x {
+  font-size: 4em;
+}
+.fit-5x {
+  font-size: 5em;
+}
+.fit-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fit-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fit-ul > li {
+  position: relative;
+}
+.fit-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fit-lg {
+  left: -1.85714286em;
+}
+.fit-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fit.pull-left {
+  margin-right: .3em;
+}
+.fit.pull-right {
+  margin-left: .3em;
+}
+.fit-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fit-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fit-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fit-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fit-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fit-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fit-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.fit-rotate-90,
+.fit-rotate-180,
+.fit-rotate-270,
+.fit-flip-horizontal,
+.fit-flip-vertical {
+  filter: none;
+}
+.fit-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fit-stack-1x,
+.fit-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fit-stack-1x {
+  line-height: inherit;
+}
+.fit-stack-2x {
+  font-size: 2em;
+}
+.fit-inverse {
+  color: #ffffff;
+}
+/* Font uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fit-angular:before {
+  content: "\f000";
+}
+.fit-nodejs:before {
+  content: "\f001";
+}
+.fit-mongodb:before {
+  content: "\f002";
+}
+.fit-github-square:before {
+  content: "\f003";
+}
+.fit-nginx:before {
+  content: "\f004";
+}
+.fit-git-square:before {
+  content: "\f005";
+}
+.fit-git-text:before {
+  content: "\f006";
+}
+.fit-github-circle:before {
+  content: "\f007";
+}
+.fit-amazon:before {
+  content: "\f008";
+}
+.fit-paypal:before {
+  content: "\f009";
+}
+.fit-koa:before {
+  content: "\f00a";
+}
+.fit-sass:before {
+  content: "\f00b";
+}
+.fit-twitter-bootstrap:before {
+  content: "\f00c";
+}
+.fit-slate:before {
+  content: "\f00d";
+}
+.fit-stripe:before {
+  content: "\f00e";
+}
+.fit-uploadcare:before {
+  content: "\f010";
+}
+.fit-mandril:before {
+  content: "\f011";
+}
+.fit-crowdin:before {
+  content: "\f012";
+}
+.fit-pm2:before {
+  content: "\f013";
+}
+.fit-keymetrics:before {
+  content: "\f014";
+}
+.fit-phonegap:before {
+  content: "\f015";
+}
+.fit-gulp:before {
+  content: "\f016";
+}
