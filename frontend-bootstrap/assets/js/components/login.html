@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+
+            <br>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Login</h1>
+                </div>
+                <div class="panel-body">
+                    <form name="auth" novalidate ng-submit="$ctrl.submit()">
+                        <div class="form-group"
+                             ng-class="{'has-error': auth.name.$invalid && auth.name.$touched}">
+                            <label for="name">Name</label>
+                            <input id="name"
+                                   name="name"
+                                   type="text"
+                                   class="form-control"
+                                   ng-model="$ctrl.name"
+                                   placeholder="Name" required>
+                            <div class="help-block"
+                                 ng-if="auth.name.$invalid && auth.name.$touched">Please enter your name</div>
+                        </div>
+                        <div class="form-group"
+                             ng-class="{'has-error': auth.email.$invalid && auth.email.$touched}">
+                            <label for="email">Email</label>
+                            <input id="email"
+                                   name="email"
+                                   type="email"
+                                   class="form-control"
+                                   ng-model="$ctrl.email"
+                                   placeholder="Email" required>
+                            <div class="help-block"
+                                 ng-if="auth.email.$invalid && auth.email.$touched">Please provide valid email</div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit"
+                                    ng-disabled="auth.$invalid" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
