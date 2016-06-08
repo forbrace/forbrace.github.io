@@ -7,16 +7,16 @@
         ])
         .config(function($stateProvider, $urlRouterProvider) {
 
-            $urlRouterProvider.otherwise("/home");
+            $urlRouterProvider.otherwise("./home");
 
             $stateProvider
                 .state('home', {
-                    url: "/home",
-                    templateUrl: "/assets/js/partials/home.html"
+                    url: "./home",
+                    templateUrl: "./assets/js/partials/home.html"
                 })
                 .state('admin', {
-                    url: "/admin",
-                    templateUrl: "/assets/js/partials/admin.html"
+                    url: "./admin",
+                    templateUrl: "./assets/js/partials/admin.html"
                 });
         });
 
@@ -28,7 +28,7 @@
     angular
         .module('app')
         .component('appAuthResult', {
-            templateUrl: '/assets/js/components/auth-result.html',
+            templateUrl: './assets/js/components/auth-result.html',
             controller: appAuthResultController
         })
     ;
@@ -53,7 +53,7 @@
     angular
         .module('app')
         .component('appLogin', {
-            templateUrl: '/assets/js/components/login.html',
+            templateUrl: './assets/js/components/login.html',
             controller: appLoginController
         })
     ;
