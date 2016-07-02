@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Frontend Engineering</title>
+    <title>Front-end web development</title>
     <meta name="description" content="Frontend developer available for hire or contract work. HTML, CSS, Javascript developer with strong Bootstrap for Sass and AngularJS experience.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -15,48 +15,79 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style media="screen">
-        .table-container {
-            display: table;
+
+        html, body {
+            height: 100%;
+            background: #00162A;
+            color: #fff;
         }
-        .table-cell {
+
+        .page {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header-row,
+        .content-row,
+        .footer-row {
+            display: table-row;
+        }
+        .content-row {
+            height: 100%;
+        }
+
+        .footer-row {
+            height: 1px;
+        }
+
+        .content {
             display: table-cell;
             vertical-align: middle;
         }
-        .table-cell:first-child {
-            padding-right: 15px;
+
+        .logo-text {
+            font-size: 60px;
         }
+
+        a {
+            color: #0085FF;
+            text-decoration: underline;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+            color: #6AFFB9;
+        }
+
         @media (max-width: 480px) {
-            .table-cell {
-                display: block;
-                text-align: center;
-            }
-            .table-cell:first-child {
-                padding-right: 0;
-            }
-            body {
-                text-align: center;
+            .logo-text {
+                font-size: 40px;
             }
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-7 col-sm-10">
+<div class="page">
+    <div class="header-row">
 
-            <br><br>
-            <div class="table-container">
-                <div class="table-cell">
-                    <img src="https://s3.amazonaws.com/accredible-api-users/images/5194/original/1455927350516?1455926833"
-                         class="center-block img-circle" width="128" height="128" alt="">
-                </div>
-                <div class="table-cell">
-                    <div>
-                        <h3>
+        <div class="container">
+
+        </div>
+
+    </div>
+    <div class="content-row">
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-10">
+
+                        <h1 class="logo-text">
                             Dmitry Paputsa
-                        </h3>
+                        </h1>
                         <h4>
-                            Frontend Developer
+                            Front-end web development
                         </h4>
 
                         <ul class="list-inline">
@@ -69,38 +100,43 @@
                                         class="fa fa-fw fa-file-pdf-o"></span>Resume</a>
                             </li>
                             <li>
+                                <a href="http://github.com/forbrace"><span
+                                        class="fa fa-fw fa-github"></span>Github</a>
+                            </li>
+                            <li>
                                 <a href="mailto:dmitry@paputsa.com" rel="nofollow"><span class="fa fa-fw fa-envelope"></span>dmitry@paputsa.com</a>
                             </li>
                         </ul>
 
+                        <h3 class="lead">
+                            Deliver smart cutting-edge user interfaces and successful
+                            production-ready web development code for over 10 years.
+                        </h3>
+
+                        <h4>
+                            Experiences
+                        </h4>
+
+                        <ul class="list-inline">
+                            <li>
+                                <a href="//boomerang.life">Boomerang Life</a>
+                            </li>
+                            <li>
+                                <a href="//simplenight.com">Simplenight</a>
+                            </li>
+                            <li>
+                                <a href="//pleer.com">Prostopleer</a>
+                            </li>
+                        </ul>
+
                     </div>
+
                 </div>
             </div>
-
-            <h3 class="lead">
-                Deliver smart cutting-edge user interfaces and successful
-                production-ready web development code for over 10 years.
-            </h3>
-
-            <h4>
-                Experiences
-            </h4>
-
-            <ul class="list-unstyled">
-                <li>
-                    <b>Frontend engineer</b> at <a href="//boomerang.life">Boomerang Life</a>
-                </li>
-                <li>
-                    <b>Frontend developer</b> at <a href="//simplenight.com">Simplenight</a>
-                </li>
-                <li>
-                    <b>Frontend developer</b> at <a href="//pleer.com">Prostopleer</a>
-                </li>
-            </ul>
-
         </div>
 
     </div>
+    <div class="footer-row"></div>
 </div>
 </body>
 </html>
