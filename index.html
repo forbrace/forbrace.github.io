@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Front-end web development</title>
-    <meta name="description" content="Frontend developer available for hire or contract work. HTML, CSS, Javascript developer with strong Bootstrap for Sass and AngularJS experience.">
+    <meta name="description"
+          content="Frontend developer available for hire or contract work. HTML, CSS, Javascript developer with strong Bootstrap for Sass and AngularJS experience.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
@@ -33,6 +34,7 @@
         .footer-row {
             display: table-row;
         }
+
         .content-row {
             height: 100%;
         }
@@ -47,33 +49,67 @@
         }
 
         .logo-text {
-            font-size: 60px;
+            font-size: 40px;
         }
 
         a {
             color: #0085FF;
             text-decoration: underline;
         }
+
         a:hover,
         a:focus,
         a:active {
             color: #6AFFB9;
         }
 
+        .table-container {
+            display: table;
+        }
+
+        .table-cell {
+            display: table-cell;
+        }
+
+
+        .table-cell-divider {
+            width: 15px;
+            display: table-cell;
+        }
+
+        .text-middle {
+            vertical-align: middle;
+        }
+
+        .margin-bottom-md {
+            margin-bottom: 15px;;
+        }
+
+        .margin-bottom-grid {
+            margin-bottom: 30px;;
+        }
+
         @media (max-width: 480px) {
             .logo-text {
-                font-size: 40px;
+                font-size: 30px;
+            }
+
+            .table-cell-xs-block {
+                display: block;
+            }
+
+            .text-xs-center {
+                text-align: center;
             }
         }
+
     </style>
 </head>
 <body>
 <div class="page">
     <div class="header-row">
 
-        <div class="container">
-
-        </div>
+        <div class="container"></div>
 
     </div>
     <div class="content-row">
@@ -81,32 +117,40 @@
         <div class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 col-sm-10">
+                    <div class="col-lg-7 col-md-8 col-sm-10">
 
-                        <h1 class="logo-text">
-                            Dmitry Paputsa
-                        </h1>
-                        <h4>
-                            Front-end web development
-                        </h4>
-
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.linkedin.com/pub/dmitriy-paputsa/9a/10a/1a0"><span
-                                        class="fa fa-fw fa-linkedin-square"></span>LinkedIn</a>
-                            </li>
-                            <li>
-                                <a href="https://www.dropbox.com/s/olz7qyj0mh2090y/cv-3.pdf?dl=0"><span
-                                        class="fa fa-fw fa-file-pdf-o"></span>Resume</a>
-                            </li>
-                            <li>
-                                <a href="http://github.com/forbrace"><span
-                                        class="fa fa-fw fa-github"></span>Github</a>
-                            </li>
-                            <li>
-                                <a href="mailto:dmitry@paputsa.com" rel="nofollow"><span class="fa fa-fw fa-envelope"></span>dmitry@paputsa.com</a>
-                            </li>
-                        </ul>
+                        <div class="table-container margin-bottom-grid">
+                            <div class="table-cell text-middle table-cell-xs-block">
+                                <img src="https://dl.dropboxusercontent.com/u/3841253/1455927350516.jpeg" class="center-block img-circle" width="128" height="128" alt="">
+                            </div>
+                            <div class="table-cell-divider table-cell-xs-block"></div>
+                            <div class="table-cell text-middle table-cell-xs-block text-xs-center">
+                                <h1 class="logo-text">
+                                    Dmitry Paputsa
+                                </h1>
+                                <h4>
+                                    Front-end web development
+                                </h4>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="https://www.linkedin.com/pub/dmitriy-paputsa/9a/10a/1a0"><span
+                                                class="fa fa-fw fa-linkedin-square"></span>LinkedIn</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dropbox.com/s/olz7qyj0mh2090y/cv-3.pdf?dl=0"><span
+                                                class="fa fa-fw fa-file-pdf-o"></span>Resume</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://github.com/forbrace"><span
+                                                class="fa fa-fw fa-github"></span>Github</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:dmitry@paputsa.com" rel="nofollow"><span
+                                                class="fa fa-fw fa-envelope"></span>dmitry@paputsa.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <h3 class="lead">
                             Deliver smart cutting-edge user interfaces and successful
@@ -118,6 +162,9 @@
                         </h4>
 
                         <ul class="list-inline">
+                            <li>
+                                <a href="//followback.com">Followback</a>
+                            </li>
                             <li>
                                 <a href="//boomerang.life">Boomerang Life</a>
                             </li>
