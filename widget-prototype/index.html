@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta id="widget-viewport-meta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Widget Prototype</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body class="widget-app-active">
+
+<div style="height: 10000px">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi culpa eaque earum, explicabo incidunt modi nostrum officia omnis perferendis, quae, qui quibusdam quos sint tempora? Aperiam consectetur ex quidem.
+</div>
+
+<div id="widget-container">
+    <div class="widget-app">
+        <span>
+            <div class="widget-app-frame">
+                <iframe allowfullscreen name="widget-app-frame"></iframe>
+            </div>
+        </span>
+    </div>
+</div>
+
+<script>
+    document.querySelector('iframe')
+        .contentDocument.write("<div style='height:10000px'><h1>Injected from parent frame</h1></div>")
+</script>
+
+</body>
+</html>
